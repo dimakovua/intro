@@ -29,3 +29,7 @@ void Coder::encode()
 	::encode( m_buf, m_size );
 }
 
+void Coder:: set( const char* buf, int size ){}
+char* Coder::buf() const{}
+int Coder::size() const{}
+void Coder:: decode(){}
