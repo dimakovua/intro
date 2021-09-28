@@ -30,16 +30,21 @@ void encode( char* buf, int size );
 class Coder
 {
 public:
-	void set( const char* buf, int size );
-	char* buf() const;
+    Coder(const Coder& right);
+    Coder(){
+        m_buf = 0;
+        m_size = 0;
+    }
+	void set( const char* bufnew, int size );
+    char* buf() const;
 	int size() const;
 
 	void encode();
 	void decode();
-
+    Coder& operator=(const Coder& right);
 private:
-	char* m_buf;
-	int m_size;
+    char* m_buf;
+	long long m_size;
 };
 
 #pragma pack(pop)
