@@ -24,7 +24,7 @@
  *
  */
 #include "cstring"
-#include <iostream>
+//#include <iostream>
 char* data = 0;
 int data_size = 0;
 Coder::Coder(){

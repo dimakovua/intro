@@ -14,6 +14,15 @@
 #ifndef CODER_H
 #define CODER_H
 
+
+
+
+
+
+
+
+
+
 /*
  * This function was pre-compiled and is provided as a part of the
  * static library.
