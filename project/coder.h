@@ -31,10 +31,8 @@ class Coder
 {
 public:
     Coder(const Coder& right);
-    Coder(){
-        m_buf = 0;
-        m_size = 0;
-    }
+    Coder();
+    ~Coder();
 	void set( const char* bufnew, int size );
     char* buf() const;
 	int size() const;
